@@ -1,0 +1,26 @@
+{
+  "name": "-jeffpach.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffPach/-JeffPach.github.io.git"
+  },
+  "author": "Jeff Pach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffPach/-JeffPach.github.io/issues"
+  },
+  "homepage": "https://github.com/JeffPach/-JeffPach.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.12.0"
+  }
+}
