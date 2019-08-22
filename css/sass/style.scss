@@ -1,25 +1,23 @@
 $base-color: #777;
-$secondary-color: #333;
+$secondary-color: #000;
 $heading-font: 'Montserrat', sans-serif;
+$body-font: 'Work Sans', sans-serif;
 
 @import 'mixins';
 
-.element {
-    width: 100px;
-    height: 100px;
-    background: red;
-    p {
-        color: $secondary-color;
-    }
+body {
+    font-family: $body-font;
+    font-weight: 300;
+    font-size: 16px;
+    color: $base-color;
 }
 
 .link {
     color: $secondary-color;
-    font-size: 12px;
+    @include link ('blue', 'red', 'pink', 'purple');
 }
 
 .heading {
     font-family: $heading-font;
     font-weight: 900;
-    @include link ('blue', 'red', 'pink', 'purple');
 }
