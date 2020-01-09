@@ -9,75 +9,239 @@
   <meta name="keywords" content="Web Development, HTML, CSS, JavaScript">
   <meta name="author" content="Jeffrey Pach">
   <title>Jeffrey J Pach</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Work+Sans:300,400&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="build/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:200,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+  <link rel="stylesheet" href="build/normalize.min.css">
   <link rel="stylesheet" href="build/styles.min.css">
 </head>
 
 <body>
-  <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90%; text-align: center;" class="heading">
+  <!-- <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90%; text-align: center;" class="heading">
     Website Coming Soon!
-  </div>
-  <!-- <header>
-    <div class="header_inner flex">
-      <logo>
-        <img src="" alt="Jeffrey J Pach logo" />
-      </logo>
-      <nav class="main_menu">
-        <ul>
-          <li>
-            <a href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
+  </div> -->
+  <div class="wrapper">
+    <header>
+      <nav class="flex">
+        <div class="logo">
+          Jeffrey Pach
+        </div>
+        <div>
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/jeffreypach/" target="_blank">
+                <i class='uil uil-instagram'></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/JeffPach" target="_blank">
+                <i class='uil uil-github'></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jeffrey-pach-0b815340/" target="_blank">
+                <i class='uil uil-linkedin'></i>
+              </a>
+            </li>
+          </ul>
+          <div class="divider"></div>
+          <div class="menu-toggle">
+            <div class="menu-icon">
+              <div class="icon-bar icon-bar--1"></div>
+              <div class="icon-bar icon-bar--2"></div>
+              <div class="icon-bar icon-bar--3"></div>
+              <div class="icon-bar icon-bar--4"></div>
+              <div class="icon-bar icon-bar--5"></div>
+            </div>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
-  <content id="home">
-    <div class="container flex">
-      <div class="flex--left">
-        <div class="heading">
-          <span style="color: #66a5ad">&lt;b&gt;</span>Hello, World!<span style="color: #66a5ad">&lt;/b&gt;</span>
-          <br>
-          I'm <span style="color: #66a5ad">Jeffrey Pach</span>, a Front-End Developer
+      <div class="menu">
+        <div class="flex">
+          <a class="item-link" href="#anchorSkills">
+            <span class="heading-title">Skills</span>
+            <i class='uil uil-arrow-right'></i>
+          </a>
+          <a class="item-link" href="#anchorExperience">
+            <span class="heading-title">Experience</span>
+            <i class='uil uil-arrow-right'></i>
+          </a>
+          <a class="item-link" href="#anchorProjects">
+            <span class="heading-title">Projects</span>
+            <i class='uil uil-arrow-right'></i>
+          </a>
+          <a class="item-link" href="#anchorContact">
+            <span class="heading-title">Contact</span>
+            <i class='uil uil-arrow-right'></i>
+          </a>
         </div>
-        <div class="text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+      </div>
+    </header>
+    <section id="anchorAbout">
+      <div class="container">
+        <img src="" alt="" />
+        <div class="heading-container">
+          <span class="heading-title heading-title--sm all-caps">
+            About Me
+          </span>
+          <span class="heading-title--extreme all-caps">
+            About Me
+          </span>
+        </div>
+        <p class="large-font">
+          I am a Front-End Developer currently based in Wichita, KS.
+          <br />
+          <br />
+          I enjoy building and completing projects from concept through deployment and I have a passion for implementing clean, effective designs to enhance user experience.
+          <br />
+          <br />
+          Front-end development is a skillset. It is not the tools, libraries or languages used to complete
+          projects. It is my job to use the knowledge attained through development experiences and apply that knowledge
+          to current and future projects.
+        </p>
+      </div>
+    </section>
+    <section id="anchorSkills">
+      <div class="container">
+        <div class="heading-container margin-top">
+          <span class="heading-title heading-title--sm all-caps">
+            Skills
+          </span>
+          <span class="heading-title--extreme all-caps">
+            Skills
+          </span>
+        </div>
+        <div class="flex flex-grid">
+          <div>
+            <span class="heading-title--sub">Basics</span>
+            <ul>
+              <li>HTML (Bootstrap)</li>
+              <li>CSS (Sass)</li>
+              <li>JavaScript (jQuery)</li>
+            </ul>
+          </div>
+          <div>
+            <span class="heading-title--sub">Standards</span>
+            <ul>
+              <li>Cross-browser compatibility</li>
+              <li>ADA compliance and responsive</li>
+              <li>Responsive, mobile-first design</li>
+            </ul>
+          </div>
+          <div>
+            <span class="heading-title--sub">Other</span>
+            <ul>
+              <li>WordPress</li>
+              <li>Team collabortion on company's propietary CMS</li>
+              <li>UI/UX design concepts</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="flex--right">
-        <img src="" alt="Jeff Pach portrait" />
+    </section>
+    <section id="anchorExperience">
+      <div class="container">
+        <div class="heading-container margin-top">
+          <span class="heading-title heading-title--sm all-caps">
+            Experience
+          </span>
+          <span class="heading-title--extreme all-caps">
+            Experience
+          </span>
+        </div>
+        <div class="flex flex-grid full-width">
+          <div>
+            <span class="heading-title--sub">Front-End Developer</span>
+            <p>
+              Pen Publishing Interactive
+              <br />
+              Wichita, KS
+              <br />
+              May 2017 - Present
+            </p>
+          </div>
+          <div class="align-button">
+            <a class="button heading-title heading-title--sm all-caps"
+              href="/Users/jeffreypach/Documents/GitHub/-JeffPach.github.io/doc/Jeffrey Pach Resume.pdf"
+              download="Jeffrey Pach Resume" target="_blank">
+              Resume
+              <i class="uil uil-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="scroll_down">
-          <div class="scroll_down--1"></div>
-          <div class="scroll_down--2"></div>
+    </section>
+    <section id="anchorProjects">
+      <div class="container">
+        <div class="heading-container margin-top">
+          <span class="heading-title heading-title--sm all-caps">
+            Projects
+          </span>
+          <span class="heading-title--extreme all-caps">
+            Projects
+          </span>
+        </div>
+        <p class="large-font">
+          Oh no! Where are all of the projects?! Projects and the
+          projects section are currently under construction.
+        </p>
+      </div>
+    </section>
+    <section id="anchorContact" class="contact">
+      <div class="container">
+        <div class="heading-container margin-top">
+          <span class="heading-title heading-title--sm all-caps">
+            Contact
+          </span>
+          <span class="heading-title--extreme all-caps">
+            Contact
+          </span>
+        </div>
+        <div class="flex flex-grid full-width add-button">
+          <div>
+            <p class="large-font">
+              Feel free to contact me with any questions, suggestions or ideas!
+            </p>
+          </div>
+          <div class="align-button">
+            <script>eval(unescape("%69%6d%6e%66%61%35%35%3d%5b%27%25%36%61%25%36%35%25%36%36%25%36%36%25%37%32%25%36%35%25%37%39%25%32%65%25%37%30%25%36%31%25%36%33%25%36%38%27%2c%5b%27%25%36%33%25%36%66%25%36%64%27%2c%27%25%36%37%25%36%64%25%36%31%25%36%39%25%36%63%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%72%61%6e%64%7a%38%37%3d%27%4d%65%73%73%61%67%65%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%72%61%6e%64%7a%38%37%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%69%6d%6e%66%61%35%35%29%29%3b"));</script>
+          </div>
+        </div>
+        <div class="flex flex-grid social-links">
+          <a class="instagram-link" href="https://www.instagram.com/jeffreypach/" target="_blank">
+            <div class="container-content--centered">
+              <i class="uil uil-instagram"></i><br />
+              Instagram
+            </div>
+          </a>
+          <a class="github-link" href="https://github.com/JeffPach" target="_blank">
+            <div class="container-content--centered">
+              <i class="uil uil-github"></i><br />
+              GitHub
+            </div>
+          </a>
+          <a class="linkedin-link" href="https://www.linkedin.com/in/jeffrey-pach-0b815340/" target="_blank">
+            <div class="container-content--centered">
+              <i class="uil uil-linkedin"></i><br />
+              LinkedIn
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="footer flex">
+      <div>
+        ©
+        <script>new Date().getFullYear() > 2010 && document.write(" " + new Date().getFullYear());</script>, Jeffrey
+        Pach
+      </div>
+      <div id="backToTop">
+        <i class='uil uil-angle-up'></i>
       </div>
     </div>
-  </content>
-  <content id="about">
-
-  </content>
-  <content id="projects">
-
-  </content>
-  <content id="contact">
-
-  </content>
-  <footer></footer> -->
+  </div>
 </body>
-<script type="text/JavaScript" src="build/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="build/scripts.js"></script>
 
 </html>

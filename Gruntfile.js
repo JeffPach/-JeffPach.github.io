@@ -29,17 +29,6 @@ module.exports = function(grunt) {
       }
     },
 
-    uglify: {
-        build: {
-            files: [
-                {
-                  src: "build/scripts.js",
-                  dest: "build/scripts.js"
-                }
-              ]
-        }
-    },
-
     cssmin: {
       target: {
         files: [{
@@ -56,9 +45,8 @@ module.exports = function(grunt) {
   //Load plugins
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-sass");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
 
   //Register tasks
-  grunt.registerTask('default', ['concat', 'sass', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['concat', 'sass', 'cssmin']);
 };
