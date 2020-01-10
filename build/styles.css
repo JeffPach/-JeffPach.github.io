@@ -498,7 +498,3 @@ section {
     width: 100%;
     top: 0;
     left: 0; } }
-
-@media (min-width: 1200px) {
-  .menu .flex {
-    flex-wrap: nowrap; } }
