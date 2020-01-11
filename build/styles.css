@@ -416,6 +416,14 @@ section {
   position: relative;
   height: auto;
   width: 100%; }
+  section#anchorProjects {
+    height: 376px;
+    overflow: hidden; }
+
+#pinItem {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
 
 .contact {
   padding-bottom: 100px; }

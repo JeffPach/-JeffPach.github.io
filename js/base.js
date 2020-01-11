@@ -41,3 +41,19 @@ function createButton() {
 $("#backToTop").click(function () {
   $("html, body").animate({scrollTop: 0}, 500);
 });
+
+const controller = new ScrollMagic.Controller();
+
+$("section").each(function() {
+  const tl = new TimelineMax();
+  const child = $(this).find(".heading-title--extreme");
+  tl.to(child, 1, { y: -75, ease: Linear.easeNone });
+
+  const scene = new ScrollMagic.Scene({
+    triggerElement: this,
+    triggerHook: 0.4,
+    duration: "100%"
+  })
+    .setTween(tl)
+    .addTo(controller);
+});
