@@ -38,18 +38,23 @@ function createButton() {
     .append('<i class="uil uil-arrow-right"></i>');
 }
 
-$("#backToTop").click(function () {
-  $("html, body").animate({scrollTop: 0}, 500);
+$("#backToTop").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
-const controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller();
+var tl = new TimelineMax();
 
 $("section").each(function() {
-  const tl = new TimelineMax();
-  const child = $(this).find(".heading-title--extreme");
-  tl.to(child, 1, { y: -75, ease: Linear.easeNone });
+  let heading = $(this).find("#parallaxHeading");
+  var tl = new TimelineMax();
 
-  const scene = new ScrollMagic.Scene({
+  tl.from(this, 0.5, { opacity: 0, ease: Linear.easeNone }).to(heading, 1, {
+    y: -75,
+    ease: Linear.easeNone
+  });
+
+  new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.4,
     duration: "100%"
